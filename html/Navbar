@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <p class="navbar-brand" id="page-title">Meme in a Bottle</p>
+      </div>
+      </div>
+    </div>
+  </nav>
+</div>

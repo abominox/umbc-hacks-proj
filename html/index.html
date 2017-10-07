@@ -2,15 +2,24 @@
 <html lang="en-US">
 <head>
   
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/index.css">
   
-  <!-- Imported CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet"> 
   
-  <!-- Imported JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
 
 <title>Memes In a Bottle</title>
@@ -18,17 +27,19 @@
 </head>
 
 <body>
+  <div class="jumbotron">
+    <h1>Meme in a Bottle</h1>
+    <center><img src="img/pepe.png" height="42" width="42"> Upload a meme, get a meme back. <img src="img/pepe.png" height="42" width="42"></center>
+  </div>
   
-  <!-- Image and text -->
-<nav class="navbar navbar-light bg-faded">
-  <a class="navbar-brand" href="#">
-    <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-    Bootstrap
-  </a>
-</nav>
-
-<h1>Memes In A Bottle</h1>
-
+  <center>
+    <label class="btn btn-default btn-file">
+      <form action="php/upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" style="display: none;" name="submit">
+          Upload a Meme
+      </form>
+    </label>
+  </center>
 </body>
 
 </html>
