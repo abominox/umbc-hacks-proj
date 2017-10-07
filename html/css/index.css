@@ -1,0 +1,44 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/50/97/77/509777156f932a322a2381d293cda17f.jpg);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Stuff we don't need (or do?) */
+
+customtag{
+	background-color: white;
+	color: purple;
+    font-size: 30px;
+}
+
+.column_div {
+    -webkit-column-width: 300px;
+    /* Chrome, Safari, Opera */
+    
+    column-width: 300px;
+}
+
+header, footer {
+    padding: 1em;
+    color: red;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+
+.rcorners {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+	/*background-color: white;*/
+}
+
+.billboard {
+    background-color: white;
+}

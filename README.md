@@ -1,2 +1,2 @@
-# umbc-hacks-proj
-Voting machine project thing.
+# Memes In A Bottle
+Get a meme, take a meme.
