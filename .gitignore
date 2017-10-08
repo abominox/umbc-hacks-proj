@@ -1,0 +1,2 @@
+#Avoid committing sensitive DB connection file.
+validate.php
