@@ -9,7 +9,7 @@
     }
     
     //setting up to upload image
-    $target_dir = "memes/";
+    $target_dir = "../uploaded_memes/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -34,10 +34,10 @@
     //     die();
     // }
     
-    $query = mysql_query("INSERT INTO User (id, url, dateAdded) VALUES ('$user_id', '$url', now())");
+    $query = mysql_query("INSERT INTO Meme (user, path, date) VALUES ('', '$target_file', now())");
     
     //if the query succeeds
     if ($query) {
-        //
+        echo '<h1>QUERY SUCCEEDED DEBUG LINE</h1>';
     }
 ?>
