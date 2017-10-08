@@ -15,24 +15,29 @@
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
     
     //Check if image file is a actual image or other file type instead
-    if(isset($_POST["submit"])) {
-        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-        if($check !== false) {
-            echo "File is an image - " . $check["mime"] . ".";
-            $uploadOk = 1;
-        } else {
-            echo "File is not an image.";
-            $uploadOk = 0;
-        }
-    }
+    // if(isset($_POST["submit"])) {
+    //     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    //     if($check !== false) {
+    //         echo "File is an image - " . $check["mime"] . ".";
+    //         $uploadOk = 1;
+    //     } else {
+    //         echo "File is not an image.";
+    //         $uploadOk = 0;
+    //     }
+    // }
     
-    //if no image was submitted
-    else {
-        echo '<h1>You did not submit a meme image.</h1>';
-        echo '<h1>Returning to main screen in five seconds...</h1>';
-        header( "refresh:5;url=../index.html" );
-        die();
-    }
+    // //if no image was submitted
+    // else {
+    //     echo '<h1>You did not submit a meme image.</h1>';
+    //     echo '<h1>Returning to main screen in five seconds...</h1>';
+    //     header( "refresh:5;url=../index.html" );
+    //     die();
+    // }
     
-    $query = 'SELECT ';
+    $query = mysql_query("INSERT INTO User (id, url, dateAdded) VALUES ('$user_id', '$url', now())");
+    
+    //if the query succeeds
+    if ($query) {
+        //
+    }
 ?>

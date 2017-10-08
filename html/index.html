@@ -11,7 +11,7 @@
   
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet"> 
-  
+   
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 
@@ -23,30 +23,46 @@
 
 
 <title>Meme In a Bottle</title>
-
 </head>
 
 <body>
-  <div class="jumbotron">
+  <div class="jumbotron" width="78">
     <h1>Meme in a Bottle</h1>
-    <center><img src="img/pepe.png" height="42" width="42"> Upload a meme, get a meme back. <img src="img/pepe.png" height="42" width="42"></center>
+<hr>
+<div class="row">
+
+      <div class="col-sm-4">   <center>   <img src="img/pepe_carlton.gif" height="60" width="42"></center> 
+</div>
+  <div class="col-sm-4"><center><p>Give a meme, get a meme.</p></center></div>
+      <div class="col-sm-4">   <center>   <img src="img/pepe_carlton.gif" height="60" width="42"></center> 
+</div>
+      
+
   </div>
-  
-  <form action="/php/upload.php" method="POST" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form>
-  
-  <center>
-    <form action="php/upload.php" method="POST" enctype="multipart/form-data">
+    </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+    <center>
+      <form action="../php/upload.php" method="POST" enctype="multipart/form-data">
       <input type="file" name="file_upload" class="btn btn-secondary btn-lg">
       </br></br>
       <button class="button" type="submit" name="submit" value="Upload a Meme">
         Upload Meme
       </button>
     </form>
-  </center>
+    
+</center>
+
+    
+    
+    
+    
 </body>
 
 </html>
